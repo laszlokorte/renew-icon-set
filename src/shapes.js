@@ -78,6 +78,425 @@ export default [
     ]
   },
   {
+    "name": "rect-double",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "rect-double-proportional",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": 0.1
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": 0.1
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": 0.1
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": 0.1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": -0.1
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": -0.1
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": -0.1
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -1
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": -0.1
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "maxsize",
+              "value": -0.1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "maxsize",
+              "value": -0.1
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
     "name": "rect-double-in",
     "paths": [
       {
@@ -231,6 +650,225 @@ export default [
   {
     "name": "ellipse",
     "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "ellipse-double",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
       {
         "fill_color": "white",
         "segments": [
@@ -1979,6 +2617,81 @@ export default [
     ]
   },
   {
+    "name": "triangle-se",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 1
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
     "name": "diamond-double-rel",
     "paths": [
       {
@@ -2294,6 +3007,428 @@ export default [
   {
     "name": "diamond-full-width",
     "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0.5
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "diamond-full-height-double",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": -0.5
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -0.5
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "diamond-full-width-double",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": -0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0.5
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
       {
         "fill_color": "white",
         "segments": [
@@ -3904,6 +5039,187 @@ export default [
     ]
   },
   {
+    "name": "bar-horizontal-black-diamond",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "height",
+                    "dynamic_value": 1,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "height",
+                "dynamic_value": -0.5,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -20
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
     "name": "bar-horizontal-black-diamond-fit",
     "paths": [
       {
@@ -4073,6 +5389,187 @@ export default [
                 "dynamic_unit": "minsize",
                 "dynamic_value": -0.5,
                 "operation": "max",
+                "value_static": -20
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "bar-horizontal-black-diamond-black",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "height",
+                    "dynamic_value": 1,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "height",
+                "dynamic_value": -0.5,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
                 "value_static": -20
               },
               "unit": "height",
@@ -4266,6 +5763,800 @@ export default [
     ]
   },
   {
+    "name": "bar-horizontal-black-diamond-quad",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "height",
+                    "dynamic_value": 1,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "height",
+                "dynamic_value": -0.5,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "bar-horizontal-black-diamond-quad-fit",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": -0.25,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
     "name": "bar-vertical-black",
     "paths": [
       {
@@ -4336,6 +6627,187 @@ export default [
               },
               "unit": "height",
               "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "bar-vertical-black-diamond",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": 1,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": -1,
+                    "operation": "max",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "width",
+                "dynamic_value": -0.5,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -20
+              },
+              "unit": "height",
+              "value": 0.5
             }
           }
         ],
@@ -4525,6 +6997,187 @@ export default [
     ]
   },
   {
+    "name": "bar-vertical-black-diamond-black",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": 1,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": -1,
+                    "operation": "max",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "width",
+                "dynamic_value": -0.5,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -20
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
     "name": "bar-vertical-black-diamond-black-fit",
     "paths": [
       {
@@ -4698,6 +7351,1240 @@ export default [
               },
               "unit": "height",
               "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "bar-vertical-black-diamond-quad",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": 1,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": -1,
+                    "operation": "max",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "width",
+                "dynamic_value": -0.5,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "bar-vertical-black-diamond-quad-fit",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.5,
+                    "operation": "max",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": -0.25,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.25,
+                    "operation": "max",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.25,
+                    "operation": "min",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "hexagon",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.5
+                }
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.5,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.5
+                }
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.5
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": -0.5,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "pill",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": true,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 0
+                    },
+                    "unit": "minsize",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 0
+                    },
+                    "unit": "minsize",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.5
+                }
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.5,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": true,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 0
+                    },
+                    "unit": "minsize",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 0
+                    },
+                    "unit": "minsize",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.5
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": true,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 0
+                    },
+                    "unit": "minsize",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 0
+                    },
+                    "unit": "minsize",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.5
+                }
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": true,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 0
+                    },
+                    "unit": "minsize",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 0
+                    },
+                    "unit": "minsize",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.5
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.5
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": -0.5,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
             }
           }
         ],
@@ -5230,6 +9117,528 @@ export default [
                 "dynamic_value": 0,
                 "operation": "min",
                 "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "bracket-left-outer",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "minsize",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "bracket-right-outer",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "minsize",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "bracket-both-outer",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": -0.45,
+                    "operation": "max",
+                    "value_static": -40
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "minsize",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": -0.45,
+                    "operation": "max",
+                    "value_static": -40
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 10
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "height",
+              "value": 0
+            }
+          },
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "minsize",
+                  "value": 0
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": 0.45,
+                    "operation": "min",
+                    "value_static": 40
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "minsize",
+                  "value": 0
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": 0.45,
+                    "operation": "min",
+                    "value_static": 40
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
               },
               "unit": "height",
               "value": 0
@@ -6303,6 +10712,425 @@ export default [
     ]
   },
   {
+    "name": "rect-double-black",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 10
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -10
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": -10
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "rect-double-proportional-black",
+    "paths": [
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": 0.1
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": 0.1
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": 0.1
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": 0.1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": -0.1
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": -0.1
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": -0.1
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -1
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "maxsize",
+                  "value": -0.1
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "maxsize",
+              "value": -0.1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "maxsize",
+              "value": -0.1
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
     "name": "rect-double-in-black",
     "paths": [
       {
@@ -6446,6 +11274,326 @@ export default [
               },
               "unit": "height",
               "value": 0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "ellipse-double-black",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          },
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 10
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
             }
           }
         ],
@@ -6667,6 +11815,433 @@ export default [
               "value": 0.5
             }
           },
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "width",
+                      "dynamic_value": -0.25,
+                      "operation": "max",
+                      "value_static": -10
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "height",
+                      "dynamic_value": -0.25,
+                      "operation": "max",
+                      "value_static": -10
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "width",
+                      "dynamic_value": -0.25,
+                      "operation": "max",
+                      "value_static": -10
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "height",
+                      "dynamic_value": -0.25,
+                      "operation": "max",
+                      "value_static": -10
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "width",
+                    "dynamic_value": -0.5,
+                    "operation": "max",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "width",
+                "dynamic_value": -0.25,
+                "operation": "max",
+                "value_static": -10
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "ellipse-triple-black",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          },
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": -20
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "sum",
+                      "value_static": 10
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 20
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 10
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "black",
+        "segments": [
           {
             "relative": false,
             "steps": [
@@ -7020,6 +12595,285 @@ export default [
     ]
   },
   {
+    "name": "ellipse-mail-filled",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.3
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.1,
+                    "operation": "max",
+                    "value_static": -6
+                  },
+                  "unit": "minsize",
+                  "value": -0.2
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.1,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.4
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.6
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.2
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.1,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.2
+                }
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0.1,
+                "operation": "min",
+                "value_static": 6
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          },
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.3
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.2
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.6
+                },
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
     "name": "cross",
     "paths": [
       {
@@ -7351,6 +13205,903 @@ export default [
               },
               "unit": "minsize",
               "value": -0.22
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "rect-fold-paper-proportional-striped",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0.5,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "minsize",
+              "value": 0.4
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0.5,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "minsize",
+              "value": 0.4
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.6
+                }
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0.2,
+                "operation": "min",
+                "value_static": 15
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.9
+            }
+          },
+          {
+            "relative": false,
+            "steps": [
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.6
+                }
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.9
+            }
+          },
+          {
+            "relative": false,
+            "steps": [
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.6
+                }
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": -0.2,
+                "operation": "max",
+                "value_static": -15
+              },
+              "unit": "width",
+              "value": 0.5
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.9
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "rect-fold-paper-proportional-arrow-right",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0.5,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "minsize",
+              "value": 0.4
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0.5,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "minsize",
+              "value": 0.4
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.4,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0.9
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.2
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -0.2
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.2
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -0.2
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.4,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -0.9
+                },
+                "relative": true
+              },
+              {
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "minsize",
+              "value": 0.2
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.8
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
+  {
+    "name": "rect-fold-paper-proportional-arrow-right-black",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0
+                }
+              },
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0.5,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "minsize",
+              "value": 0.4
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.5,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.4
+                }
+              },
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0.5,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 1
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "minsize",
+              "value": 0.4
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "black",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": -0.4,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0.9
+                },
+                "relative": true
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": 0.2
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -0.2
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "minsize",
+                  "value": -0.2
+                },
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -0.2
+                }
+              },
+              {
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.1
+                }
+              },
+              {
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0.4,
+                    "operation": "sum",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -0.9
+                },
+                "relative": true
+              },
+              {
+                "relative": true
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "minsize",
+              "value": 0.2
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "sum",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.8
             }
           }
         ],

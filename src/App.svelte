@@ -10,6 +10,7 @@
 			.then((r) => {
 				return r.json().then((data) => {
 					decos = data.shapes;
+					console.log(data.shapes);
 					fetched = true;
 				});
 			})
@@ -45,7 +46,7 @@
 		const ops = {
 			max: (a, b) => Math.max(a, b),
 			min: (a, b) => Math.min(a, b),
-			add: (a, b) => a + b,
+			sum: (a, b) => a + b,
 		};
 
 		const origin = box[dim];
