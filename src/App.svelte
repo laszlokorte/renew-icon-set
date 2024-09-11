@@ -24,11 +24,9 @@
 		y: 80,
 		width: 100,
 		height: 100,
+		fill: "#ddeeff",
+		stroke: "#000055",
 	};
-
-	function clampAbs(v, max) {
-		return Math.sign(v) * Math.min(Math.abs(v), max);
-	}
 
 	function buildCoord(box, dim, relative, coord) {
 		const units = {
@@ -199,26 +197,32 @@
 </script>
 
 <header>
-	<h2>Renew Icons</h2>
 	<div>
-		<label
-			>Width: <input
-				type="range"
-				min={0}
-				step=".1"
-				max={100}
-				bind:value={box.width}
-			/>
-		</label><br />
-		<label
-			>Height: <input
-				type="range"
-				min={0}
-				step=".1"
-				max={100}
-				bind:value={box.height}
-			/>
-		</label>
+		<h2>Renew Icons</h2>
+		<div>
+			<label
+				>Width: <input
+					type="range"
+					min={0}
+					step=".1"
+					max={100}
+					bind:value={box.width}
+				/>
+			</label><br />
+			<label
+				>Height: <input
+					type="range"
+					min={0}
+					step=".1"
+					max={100}
+					bind:value={box.height}
+				/>
+			</label>
+		</div>
+	</div>
+	<div>
+		<label>Fill: <input type="color" bind:value={box.fill} /> </label><br />
+		<label>Stroke: <input type="color" bind:value={box.stroke} /> </label>
 	</div>
 </header>
 
@@ -230,16 +234,18 @@
 					60} {box.height + 60}"
 			>
 				<rect {...box} fill="#0001"></rect>
-				{#each deco.paths as path}
-					<path
-						d={buildPath(box, path)}
-						fill={path.fill_color}
-						stroke={path.stroke_color}
-						vector-effect="non-scaling-stroke"
-						stroke-width="0.5"
-						fill-rule="evenodd"
-					/>
-				{/each}
+				<g fill={box.fill} stroke={box.stroke}>
+					{#each deco.paths as path}
+						<path
+							d={buildPath(box, path)}
+							fill={path.fill_color}
+							stroke={path.stroke_color}
+							vector-effect="non-scaling-stroke"
+							stroke-width="0.5"
+							fill-rule="evenodd"
+						/>
+					{/each}
+				</g>
 				<rect
 					x={box.x - 1}
 					y={box.y - 1}
@@ -265,6 +271,8 @@
 		right: 0;
 		padding: 1em;
 		font-family: monospace;
+		display: flex;
+		flex-direction: row;
 	}
 
 	footer {

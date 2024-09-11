@@ -1197,6 +1197,145 @@ export default [
       }
     ]
   },
+
+  {
+    "name": "pie",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.5
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -0.5
+                },
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": -0.5
+                },
+                "relative": true
+              }, {
+
+                "relative": true,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.5
+                },
+              },
+              {
+                relative: true,
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.5
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
   {
     "name": "bar-horizontal",
     "paths": [
@@ -14398,5 +14537,334 @@ export default [
         "stroke_color": "black"
       }
     ]
-  }
+  },
+
+  {
+    "name": "database",
+    "paths": [
+      {
+        "fill_color": "white",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.2
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              }, 
+              {
+                "relative": false,
+                "vertical": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "height",
+                  "value": 0.2
+                }
+              },
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.2
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 0
+                },
+                "relative": false
+              }, 
+              {
+                "relative": false
+              }
+            ],
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.8
+            }
+          }
+        ],
+        "stroke_color": "black"
+      },
+      {
+        "fill_color": "none",
+        "segments": [
+          {
+            "relative": false,
+            "steps": [
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.2
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": false
+              }, 
+            ],
+
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.2
+            }
+          },
+          {
+            "relative": true,
+            "steps": [
+              {
+                  "vertical": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.1
+                  },
+                  "relative": true
+              },
+
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": true,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.2
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": -1
+                },
+                "relative": true
+              }, 
+              {
+                  "vertical": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.1
+                  },
+                  "relative": true
+              },
+
+              {
+                "arc": {
+                  "angle": 0,
+                  "large": false,
+                  "rx": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "width",
+                    "value": 0.5
+                  },
+                  "ry": {
+                    "offset": {
+                      "dynamic_unit": "minsize",
+                      "dynamic_value": 0,
+                      "operation": "min",
+                      "value_static": 0
+                    },
+                    "unit": "height",
+                    "value": 0.2
+                  },
+                  "sweep": false
+                },
+                "horizontal": {
+                  "offset": {
+                    "dynamic_unit": "minsize",
+                    "dynamic_value": 0,
+                    "operation": "min",
+                    "value_static": 0
+                  },
+                  "unit": "width",
+                  "value": 1
+                },
+                "relative": true
+              }, 
+            ],
+
+            "x": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "width",
+              "value": 0
+            },
+            "y": {
+              "offset": {
+                "dynamic_unit": "minsize",
+                "dynamic_value": 0,
+                "operation": "min",
+                "value_static": 0
+              },
+              "unit": "height",
+              "value": 0.0
+            }
+          }
+        ],
+        "stroke_color": "black"
+      }
+    ]
+  },
 ]
