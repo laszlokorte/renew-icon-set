@@ -1,317 +1,183 @@
 <script>
-	import { onMount } from "svelte";
-	import decorations from "./shapes.js";
+    import { onMount } from "svelte";
+    import decorations from "./shapes.js";
+    import { buildCoord, buildStep, buildPath } from "./path.js";
 
-	let decos = decorations;
-	let fetched = false;
+    let decos = decorations;
+    let fetched = false;
 
-	onMount(() => {
-		fetch("http://localhost:4000/api/symbols")
-			.then((r) => {
-				return r.json().then((data) => {
-					decos = data.shapes;
-					console.log(data.shapes);
-					fetched = true;
-				});
-			})
-			.catch((e) => {
-				fetched = false;
-			});
-	});
+    onMount(() => {
+        fetch("http://localhost:4000/api/symbols")
+            .then((r) => {
+                return r.json().then((data) => {
+                    decos = data.shapes;
+                    console.log(data.shapes);
+                    fetched = true;
+                });
+            })
+            .catch((e) => {
+                fetched = false;
+            });
+    });
 
-	const box = {
-		x: 50,
-		y: 80,
-		width: 100,
-		height: 100,
-		fill: "#ddeeff",
-		stroke: "#000055",
-	};
-
-	function buildCoord(box, dim, relative, coord) {
-		const units = {
-			maxsize: Math.max(box.width, box.height),
-			minsize: Math.min(box.width, box.height),
-			width: box.width,
-			height: box.height,
-		};
-
-		const sizes = {
-			x: "width",
-			y: "height",
-		};
-
-		const ops = {
-			max: (a, b) => Math.max(a, b),
-			min: (a, b) => Math.min(a, b),
-			sum: (a, b) => a + b,
-		};
-
-		const origin = box[dim];
-		const base = coord.value * units[coord.unit];
-		const offset = ops[coord.offset.operation](
-			coord.offset.value_static,
-			units[coord.offset.dynamic_unit] * coord.offset.dynamic_value,
-		);
-
-		return (relative ? base : base + origin) + offset;
-	}
-
-	function buildStep(box, startPos, { x: currentX, y: currentY }, step) {
-		const relative = !!step.relative;
-		const vertical = !!step.vertical;
-		const horizontal = !!step.horizontal;
-		const diagonal = vertical && horizontal;
-		const arc = !!step.arc;
-
-		if (arc) {
-			const rx = buildCoord(box, "x", true, step.arc.rx);
-			const ry = buildCoord(box, "y", true, step.arc.ry);
-			const params =
-				rx +
-				"," +
-				ry +
-				"," +
-				(step.arc.angle ? 1 : 0) +
-				"," +
-				(step.arc.sweep ? 1 : 0) +
-				"," +
-				(step.arc.large ? 1 : 0);
-
-			if (diagonal) {
-				const x = buildCoord(box, "x", step.relative, step.horizontal);
-				const y = buildCoord(box, "y", step.relative, step.vertical);
-
-				return {
-					string: (relative ? "a" : "A") + params + "," + x + "," + y,
-					pos: relative
-						? { x: currentX + x, y: currentY + y }
-						: { x, y },
-				};
-			} else if (vertical) {
-				const y = buildCoord(box, "y", step.relative, step.vertical);
-				return {
-					string:
-						(relative ? "a" : "A") +
-						params +
-						"," +
-						(relative ? 0 : currentX) +
-						"," +
-						y,
-					pos: relative
-						? { x: currentX, y: currentY + y }
-						: { x: currentX, y },
-				};
-			} else if (horizontal) {
-				const x = buildCoord(box, "x", step.relative, step.horizontal);
-				return {
-					string:
-						(relative ? "a" : "A") +
-						params +
-						"," +
-						x +
-						"," +
-						(relative ? 0 : currentY),
-					pos: relative
-						? { x: currentX + x, y: currentY }
-						: { x, y: currentY },
-				};
-			} else {
-				return {
-					string:
-						(relative ? "a" : "A") +
-						params +
-						"," +
-						(relative ? 0 : currentX) +
-						"," +
-						(relative ? 0 : currentY),
-					pos: relative
-						? { x: currentX + x, y: currentY + y }
-						: { x: currentX, y: currentY },
-				};
-			}
-		} else {
-			if (diagonal) {
-				const x = buildCoord(box, "x", step.relative, step.horizontal);
-				const y = buildCoord(box, "y", step.relative, step.vertical);
-				return {
-					string: (relative ? "l" : "L") + x + "," + y,
-					pos: relative
-						? { x: currentX + x, y: currentY + y }
-						: { x, y },
-				};
-			} else if (vertical) {
-				const y = buildCoord(box, "y", step.relative, step.vertical);
-				return {
-					string: (relative ? "v" : "V") + y,
-					pos: relative
-						? { x: currentX, y: currentY + y }
-						: { x: currentX, y },
-				};
-			} else if (horizontal) {
-				const x = buildCoord(box, "x", step.relative, step.horizontal);
-				return {
-					string: (relative ? "h" : "H") + x,
-					pos: relative
-						? { x: currentX + x, y: currentY }
-						: { x, y: currentY },
-				};
-			} else {
-				return {
-					string: relative ? "z" : "Z",
-					pos: startPos,
-				};
-			}
-		}
-	}
-
-	function buildPath(box, path) {
-		return path.segments
-			.map((segment) => {
-				const start = {
-					x: buildCoord(box, "x", segment.relative, segment.x),
-					y: buildCoord(box, "y", segment.relative, segment.y),
-				};
-
-				return segment.steps.reduce(
-					({ string: accString, pos: currentPos }, step) => {
-						const currentStep = buildStep(
-							box,
-							start,
-							currentPos,
-							step,
-						);
-						return {
-							string: accString + currentStep.string,
-							pos: currentStep.pos,
-						};
-					},
-					{
-						string: `${segment.relative ? "m" : "M"} ${start.x} ${start.y}`,
-						pos: start,
-					},
-				).string;
-			})
-			.join(" ");
-	}
+    const box = {
+        x: 50,
+        y: 80,
+        width: 100,
+        height: 100,
+        fill: "#ffffff",
+        stroke: "#111111",
+    };
 </script>
 
-<header>
-	<div>
-		<h2>Renew Icons</h2>
-		<div>
-			<label
-				>Width: <input
-					type="range"
-					min={0}
-					step=".1"
-					max={100}
-					bind:value={box.width}
-				/>
-			</label><br />
-			<label
-				>Height: <input
-					type="range"
-					min={0}
-					step=".1"
-					max={100}
-					bind:value={box.height}
-				/>
-			</label>
-		</div>
-	</div>
-	<div>
-		<label>Fill: <input type="color" bind:value={box.fill} /> </label><br />
-		<label>Stroke: <input type="color" bind:value={box.stroke} /> </label>
-	</div>
-</header>
+<article>
+    <header>
+        <div>
+            <h2>Renew Icons</h2>
+            <p>
+                Below you see a set of parametric icons for <a
+                    href="http://www.renew.de">Renew</a
+                >.
+            </p>
+            <p>
+                The icons can adjust to fill the space of the rectangle they are
+                placed in without violating their characteristic proportions.
+            </p>
+            <div
+                style="display: grid; grid-auto-flow: column; grid-template-columns: auto auto auto auto; grid-template-rows: 1fr 1fr; gap: 0 2ex; align-self: start;"
+            >
+                <label for="Width">Width: </label>
+                <input
+                    id="Width"
+                    type="range"
+                    min={0}
+                    step=".1"
+                    max={100}
+                    bind:value={box.width}
+                />
+                <label for="Height">Height: </label>
+                <input
+                    id="Height"
+                    type="range"
+                    min={0}
+                    step=".1"
+                    max={100}
+                    bind:value={box.height}
+                />
 
-<div class="grid">
-	{#each decos as deco}
-		<article class="cell" class:fetched>
-			<svg
-				viewBox="{box.x - 30} {box.y - 30} {box.width +
-					60} {box.height + 60}"
-			>
-				<rect {...box} fill="#0001"></rect>
-				<g fill={box.fill} stroke={box.stroke}>
-					{#each deco.paths as path}
-						<path
-							d={buildPath(box, path)}
-							fill={path.fill_color}
-							stroke={path.stroke_color}
-							vector-effect="non-scaling-stroke"
-							stroke-width="0.5"
-							fill-rule="evenodd"
-						/>
-					{/each}
-				</g>
-				<rect
-					x={box.x - 1}
-					y={box.y - 1}
-					width={box.width + 2}
-					height={box.height + 2}
-					stroke-width="2"
-					fill="none"
-					stroke="#08a5"
-					stroke-dasharray="5 5"
-				></rect>
-			</svg>
-			<footer>{deco.name}</footer>
-		</article>
-	{/each}
-</div>
+                <label for="Fill">Fill: </label>
+                <input type="color" bind:value={box.fill} />
+                <label id="Fill" for="Stroke">Stroke: </label>
+                <input id="Stroke" type="color" bind:value={box.stroke} />
+            </div>
+        </div>
+        <hr />
+    </header>
+
+    <div class="grid">
+        {#each decos as deco}
+            <article class="cell" class:fetched>
+                <svg
+                    viewBox="{box.x - 20} {box.y - 20} {box.width +
+                        2 * 20} {box.height + 2 * 20}"
+                >
+                    <rect {...box} stroke="none" fill="#0001"></rect>
+                    <g fill={box.fill} stroke={box.stroke}>
+                        {#each deco.paths as path}
+                            <path
+                                d={buildPath(box, path)}
+                                fill={path.fill_color}
+                                stroke={path.stroke_color}
+                                vector-effect="non-scaling-stroke"
+                                stroke-width="0.5"
+                                fill-rule="evenodd"
+                            />
+                        {/each}
+                    </g>
+                    <rect
+                        x={box.x - 1}
+                        y={box.y - 1}
+                        width={box.width + 2}
+                        height={box.height + 2}
+                        stroke-width="2"
+                        fill="none"
+                        stroke="#08a5"
+                        stroke-dasharray="5 5"
+                    ></rect>
+                </svg>
+                <footer>{deco.name}</footer>
+            </article>
+        {/each}
+    </div>
+</article>
 
 <style>
-	header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		background: #fffa;
-		right: 0;
-		padding: 1em;
-		font-family: monospace;
-		display: flex;
-		flex-direction: row;
-	}
+    article {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 1em;
+    }
 
-	footer {
-		font-family: monospace;
-	}
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
-		grid-auto-rows: 9em;
-		gap: 3em 1em;
-		padding-bottom: 3em;
-		margin-top: 8em;
-	}
-	.cell {
-		background: #f0f0f0;
-		text-align: center;
-		font-size: small;
-		width: 100%;
-	}
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: #fffa;
+        right: 0;
+        font-family: monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 1ex;
+    }
 
-	.cell.fetched {
-		background: #e0faff;
-	}
+    hr {
+        border: none;
+        border-bottom: 1px solid #aaa;
+    }
 
-	h2 {
-		margin: 0;
-	}
-	svg {
-		width: 100%;
-		height: 100%;
-	}
+    footer {
+        font-family: monospace;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+        grid-auto-rows: 9em;
+        gap: 3em 1em;
+        padding-bottom: 3em;
+    }
+    .cell {
+        background: #f0f0f0;
+        text-align: center;
+        font-size: small;
+        width: 100%;
+    }
 
-	input {
-		padding: 0;
-	}
+    .cell.fetched {
+        background: #e0faff;
+    }
 
-	label {
-		display: flex;
-		align-items: center;
-		gap: 1em;
-	}
+    h2 {
+        margin: 0;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    input {
+        padding: 0;
+        margin: 0;
+    }
+
+    input[type="range"] {
+        width: 20em;
+        max-width: 80vw;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
 </style>
