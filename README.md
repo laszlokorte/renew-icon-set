@@ -1,6 +1,6 @@
-![Logo](./images/logo.png)
-
 # Scalable Renew Icon Set
+
+![Logo](./images/logo.png)
 
 Reponsive Vector Icons for [Renew](http://www.renew.de)
 
