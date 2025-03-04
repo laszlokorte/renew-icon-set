@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import decorations from "./shapes.js";
-    import { buildCoord, buildStep, buildPath } from "./path.js";
+    import { buildCoord, buildStep, buildPath, serializePath } from "./path.js";
 
     let decos = decorations;
     let fetched = false;
@@ -106,6 +106,14 @@
                     ></rect>
                 </svg>
                 <footer>{deco.name}</footer>
+                <footer>
+                    <input
+                        readonly
+                        class="code"
+                        type="text"
+                        value={deco.paths.map((p) => serializePath(p))}
+                    />
+                </footer>
             </article>
         {/each}
     </div>
@@ -142,7 +150,7 @@
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
-        grid-auto-rows: 9em;
+        grid-auto-rows: 12em;
         gap: 3em 1em;
         padding-bottom: 3em;
     }
@@ -151,6 +159,13 @@
         text-align: center;
         font-size: small;
         width: 100%;
+        padding: 1ex;
+        box-sizing: border-box;
+    }
+
+    .code {
+        font: inherit;
+        padding: ex;
     }
 
     .cell.fetched {

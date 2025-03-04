@@ -1,3 +1,22 @@
+export function serializeCoord(dim, relative, coord) {
+    const sizes = {
+        x: "width",
+        y: "height",
+    };
+
+    const ops = {
+        max: (a, b) => Math.max(a, b),
+        min: (a, b) => Math.min(a, b),
+        sum: (a, b) => a + b,
+    };
+
+    // const origin = box[dim];
+    const base = `${coord.value} ${coord.unit}`;
+    const offset = `${coord.offset.operation}(${coord.offset.value_static}, ${coord.offset.dynamic_value} * ${coord.offset.dynamic_unit})`;
+
+    return `${base} + ${offset}`;
+}
+
 export function buildCoord(box, dim, relative, coord) {
     const units = {
         maxsize: Math.max(box.width, box.height),
@@ -27,7 +46,7 @@ export function buildCoord(box, dim, relative, coord) {
     return (relative ? base : base + origin) + offset;
 }
 
-export function buildStep(box, startPos, {
+export function buildStep(makeCoords, startPos, {
     x: currentX,
     y: currentY
 }, step) {
@@ -38,25 +57,25 @@ export function buildStep(box, startPos, {
     const arc = !!step.arc;
 
     if (arc) {
-        const rx = buildCoord(box, "x", true, step.arc.rx);
-        const ry = buildCoord(box, "y", true, step.arc.ry);
+        const rx = makeCoords("x", true, step.arc.rx);
+        const ry = makeCoords("y", true, step.arc.ry);
         const params =
             rx +
-            "," +
+            ", " +
             ry +
-            "," +
+            ", " +
             (step.arc.angle ? 1 : 0) +
-            "," +
+            ", " +
             (step.arc.sweep ? 1 : 0) +
-            "," +
+            ", " +
             (step.arc.large ? 1 : 0);
 
         if (diagonal) {
-            const x = buildCoord(box, "x", step.relative, step.horizontal);
-            const y = buildCoord(box, "y", step.relative, step.vertical);
+            const x = makeCoords("x", step.relative, step.horizontal);
+            const y = makeCoords("y", step.relative, step.vertical);
 
             return {
-                string: (relative ? "a" : "A") + params + "," + x + "," + y,
+                string: (relative ? "a" : "A") + " " + params + ", " + x + ", " + y,
                 pos: relative ? {
                     x: currentX + x,
                     y: currentY + y
@@ -66,14 +85,14 @@ export function buildStep(box, startPos, {
                 },
             };
         } else if (vertical) {
-            const y = buildCoord(box, "y", step.relative, step.vertical);
+            const y = makeCoords("y", step.relative, step.vertical);
             return {
                 string:
-                    (relative ? "a" : "A") +
+                    (relative ? "a" : "A") + " " +
                     params +
-                    "," +
+                    ", " +
                     (relative ? 0 : currentX) +
-                    "," +
+                    ", " +
                     y,
                 pos: relative ? {
                     x: currentX,
@@ -84,14 +103,14 @@ export function buildStep(box, startPos, {
                 },
             };
         } else if (horizontal) {
-            const x = buildCoord(box, "x", step.relative, step.horizontal);
+            const x = makeCoords("x", step.relative, step.horizontal);
             return {
                 string:
-                    (relative ? "a" : "A") +
+                    (relative ? "a" : "A") + " " +
                     params +
-                    "," +
+                    ", " +
                     x +
-                    "," +
+                    ", " +
                     (relative ? 0 : currentY),
                 pos: relative ? {
                     x: currentX + x,
@@ -104,11 +123,11 @@ export function buildStep(box, startPos, {
         } else {
             return {
                 string:
-                    (relative ? "a" : "A") +
+                    (relative ? "a" : "A") + " " +
                     params +
-                    "," +
+                    ", " +
                     (relative ? 0 : currentX) +
-                    "," +
+                    ", " +
                     (relative ? 0 : currentY),
                 pos: relative ? {
                     x: currentX + x,
@@ -121,10 +140,10 @@ export function buildStep(box, startPos, {
         }
     } else {
         if (diagonal) {
-            const x = buildCoord(box, "x", step.relative, step.horizontal);
-            const y = buildCoord(box, "y", step.relative, step.vertical);
+            const x = makeCoords("x", step.relative, step.horizontal);
+            const y = makeCoords("y", step.relative, step.vertical);
             return {
-                string: (relative ? "l" : "L") + x + "," + y,
+                string: (relative ? "l" : "L") + " " + x + ", " + y,
                 pos: relative ? {
                     x: currentX + x,
                     y: currentY + y
@@ -134,9 +153,9 @@ export function buildStep(box, startPos, {
                 },
             };
         } else if (vertical) {
-            const y = buildCoord(box, "y", step.relative, step.vertical);
+            const y = makeCoords("y", step.relative, step.vertical);
             return {
-                string: (relative ? "v" : "V") + y,
+                string: (relative ? "v" : "V") + " " + y,
                 pos: relative ? {
                     x: currentX,
                     y: currentY + y
@@ -146,9 +165,9 @@ export function buildStep(box, startPos, {
                 },
             };
         } else if (horizontal) {
-            const x = buildCoord(box, "x", step.relative, step.horizontal);
+            const x = makeCoords("x", step.relative, step.horizontal);
             return {
-                string: (relative ? "h" : "H") + x,
+                string: (relative ? "h" : "H") + " " + x,
                 pos: relative ? {
                     x: currentX + x,
                     y: currentY
@@ -159,7 +178,7 @@ export function buildStep(box, startPos, {
             };
         } else {
             return {
-                string: relative ? "z" : "Z",
+                string: (relative ? "z" : "Z"),
                 pos: startPos,
             };
         }
@@ -180,7 +199,7 @@ export function buildPath(box, path) {
                     pos: currentPos
                 }, step) => {
                     const currentStep = buildStep(
-                        box,
+                        (...args) => buildCoord(box, ...args),
                         start,
                         currentPos,
                         step,
@@ -190,7 +209,39 @@ export function buildPath(box, path) {
                         pos: currentStep.pos,
                     };
                 }, {
-                    string: `${segment.relative ? "m" : "M"} ${start.x} ${start.y}`,
+                    string: `${segment.relative ? "m" : "M"} ${start.x} ${start.y} `,
+                    pos: start,
+                },
+            ).string;
+        })
+        .join(" ");
+}
+
+export function serializePath(path) {
+    return path.segments
+        .map((segment) => {
+            const start = {
+                x: serializeCoord("x", segment.relative, segment.x),
+                y: serializeCoord("y", segment.relative, segment.y),
+            };
+
+            return segment.steps.reduce(
+                ({
+                    string: accString,
+                    pos: currentPos
+                }, step) => {
+                    const currentStep = buildStep(
+                        serializeCoord,
+                        start,
+                        currentPos,
+                        step,
+                    );
+                    return {
+                        string: accString + ' ' + currentStep.string,
+                        pos: currentStep.pos,
+                    };
+                }, {
+                    string: `${segment.relative ? "m" : "M"} ${start.x} ${start.y} `,
                     pos: start,
                 },
             ).string;
