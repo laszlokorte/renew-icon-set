@@ -1,24 +1,30 @@
 <script>
     import { onMount } from "svelte";
     import decorations from "./shapes.js";
-    import { buildCoord, buildStep, buildPath, serializePath } from "./path.js";
+    import { buildPath, serializePath } from "./path.js";
 
     let decos = decorations;
     let fetched = false;
 
-    onMount(() => {
-        fetch("http://localhost:4000/api/symbols")
+    const loadFromApi = (evt) => {
+        evt.preventDefault();
+        fetch(Object.fromEntries(new FormData(evt.currentTarget)).api_url, {
+            mode: "cors",
+            credentials: "include",
+        })
             .then((r) => {
                 return r.json().then((data) => {
-                    decos = data.shapes;
-                    console.log(data.shapes);
-                    fetched = true;
+                    if (data.shapes) {
+                        decos = data.shapes;
+                        console.log(data.shapes);
+                        fetched = true;
+                    }
                 });
             })
             .catch((e) => {
                 fetched = false;
             });
-    });
+    };
 
     const box = {
         x: 50,
@@ -43,6 +49,16 @@
                 The icons can adjust to fill the space of the rectangle they are
                 placed in without violating their characteristic proportions.
             </p>
+            <div>
+                <form on:submit={loadFromApi} methd="post" action="#">
+                    <input
+                        type="text"
+                        name="api_url"
+                        value="http://localhost:4000/api/symbols"
+                    />
+                    <button type="submit"> Load from API </button>
+                </form>
+            </div>
             <div
                 style="display: grid; grid-auto-flow: column; grid-template-columns: auto auto auto auto; grid-template-rows: 1fr 1fr; gap: 0 2ex; align-self: start;"
             >
