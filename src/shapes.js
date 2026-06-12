@@ -1,5 +1,1117 @@
 export default [
   {
+    name: "for-all",
+    paths: [
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
+                  },
+                  unit: "width",
+                  value: 1,
+                },
+                relative: false,
+              },
+              {
+                relative: false,
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
+                  },
+                  unit: "height",
+                  value: 1,
+                },
+              },
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: false,
+              },
+              {
+                relative: false,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "width",
+              value: 0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "height",
+              value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: {
+                  angle: 0,
+                  large: false,
+                  rx: {
+                    offset: {
+                      dynamic_unit: "minsize",
+                      dynamic_value: 0.25,
+                      operation: "min",
+                      value_static: 15,
+                    },
+                    unit: "minsize",
+                    value: 0,
+                  },
+                  ry: {
+                    offset: {
+                      dynamic_unit: "minsize",
+                      dynamic_value: 0.25,
+                      operation: "min",
+                      value_static: 15,
+                    },
+                    unit: "minsize",
+                    value: 0,
+                  },
+                  sweep: false,
+                },
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.5,
+                    operation: "min",
+                    value_static: 30,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+              {
+                arc: {
+                  angle: 0,
+                  large: false,
+                  rx: {
+                    offset: {
+                      dynamic_unit: "minsize",
+                      dynamic_value: -0.25,
+                      operation: "max",
+                      value_static: -15,
+                    },
+                    unit: "minsize",
+                    value: 0,
+                  },
+                  ry: {
+                    offset: {
+                      dynamic_unit: "minsize",
+                      dynamic_value: -0.25,
+                      operation: "max",
+                      value_static: -15,
+                    },
+                    unit: "minsize",
+                    value: 0,
+                  },
+                  sweep: false,
+                },
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.5,
+                    operation: "max",
+                    value_static: -30,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.25,
+                operation: "min",
+                value_static: 15,
+              },
+              unit: "width",
+              value: 0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.1,
+                    operation: "min",
+                    value_static: 5,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -15,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.65,
+                operation: "min",
+                value_static: 38,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.1,
+                    operation: "max",
+                    value_static: -5,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -15,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.65,
+                operation: "min",
+                value_static: 38,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.1,
+                    operation: "min",
+                    value_static: 3,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 29,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.1,
+                    operation: "max",
+                    value_static: -3,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 29,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "black",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.25,
+                    operation: "min",
+                    value_static: 10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.25,
+                operation: "min",
+                value_static: 10,
+              },
+              unit: "width",
+              value: 0.5,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "width",
+              value: 0.0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "black",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.25,
+                    operation: "min",
+                    value_static: 10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.25,
+                operation: "min",
+                value_static: 10,
+              },
+              unit: "width",
+              value: 0.5,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "height",
+              value: 1.0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+    ],
+  },
+  {
+    name: "iterator",
+    paths: [
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
+                  },
+                  unit: "width",
+                  value: 1,
+                },
+                relative: false,
+              },
+              {
+                relative: false,
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
+                  },
+                  unit: "height",
+                  value: 1,
+                },
+              },
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: false,
+              },
+              {
+                relative: false,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "width",
+              value: 0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "height",
+              value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: {
+                  angle: 0,
+                  large: false,
+                  rx: {
+                    offset: {
+                      dynamic_unit: "minsize",
+                      dynamic_value: 0.25,
+                      operation: "min",
+                      value_static: 15,
+                    },
+                    unit: "minsize",
+                    value: 0,
+                  },
+                  ry: {
+                    offset: {
+                      dynamic_unit: "minsize",
+                      dynamic_value: 0.25,
+                      operation: "min",
+                      value_static: 15,
+                    },
+                    unit: "minsize",
+                    value: 0,
+                  },
+                  sweep: false,
+                },
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.5,
+                    operation: "min",
+                    value_static: 30,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+              {
+                arc: {
+                  angle: 0,
+                  large: false,
+                  rx: {
+                    offset: {
+                      dynamic_unit: "minsize",
+                      dynamic_value: -0.25,
+                      operation: "max",
+                      value_static: -15,
+                    },
+                    unit: "minsize",
+                    value: 0,
+                  },
+                  ry: {
+                    offset: {
+                      dynamic_unit: "minsize",
+                      dynamic_value: -0.25,
+                      operation: "max",
+                      value_static: -15,
+                    },
+                    unit: "minsize",
+                    value: 0,
+                  },
+                  sweep: false,
+                },
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.5,
+                    operation: "max",
+                    value_static: -30,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.25,
+                operation: "min",
+                value_static: 15,
+              },
+              unit: "width",
+              value: 0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.3,
+                    operation: "min",
+                    value_static: 15,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.35,
+                operation: "min",
+                value_static: 22,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.1,
+                    operation: "min",
+                    value_static: 5,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.35,
+                operation: "min",
+                value_static: 22,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.1,
+                    operation: "max",
+                    value_static: -5,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.35,
+                operation: "min",
+                value_static: 22,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "white",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.1,
+                    operation: "min",
+                    value_static: 5,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.65,
+                operation: "min",
+                value_static: 37,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.1,
+                    operation: "max",
+                    value_static: -5,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 30,
+              },
+              unit: "height",
+              value: 0.0,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.65,
+                operation: "min",
+                value_static: 37,
+              },
+              unit: "width",
+              value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "black",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.25,
+                    operation: "min",
+                    value_static: 10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.25,
+                operation: "min",
+                value_static: 10,
+              },
+              unit: "width",
+              value: 0.5,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "width",
+              value: 0.0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "black",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.25,
+                    operation: "min",
+                    value_static: 10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+              {
+                arc: null,
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.25,
+                    operation: "max",
+                    value_static: -10,
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                relative: true,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.25,
+                operation: "min",
+                value_static: 10,
+              },
+              unit: "width",
+              value: 0.5,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "height",
+              value: 1.0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+    ],
+  },
+  {
     name: "ellipse-arrow-inward-north-west",
     paths: [
       {
@@ -167,7 +1279,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "black",
         segments: [
           {
             relative: false,
@@ -513,7 +1625,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "black",
         segments: [
           {
             relative: false,
