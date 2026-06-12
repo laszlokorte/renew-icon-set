@@ -3,7 +3,7 @@ export default [
     name: "for-all",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -76,7 +76,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -183,7 +183,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -288,7 +288,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -334,7 +334,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -551,7 +551,7 @@ export default [
     name: "iterator",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -624,7 +624,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -731,7 +731,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -776,7 +776,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -860,7 +860,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -1172,7 +1172,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -1411,7 +1411,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -1518,7 +1518,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -1700,7 +1700,7 @@ export default [
     name: "rect",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -1778,7 +1778,7 @@ export default [
     name: "rect-double",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -1851,7 +1851,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -1929,7 +1929,7 @@ export default [
     name: "rect-double-proportional",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2119,7 +2119,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2197,7 +2197,7 @@ export default [
     name: "rect-double-in",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2270,7 +2270,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2348,7 +2348,7 @@ export default [
     name: "ellipse",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2460,7 +2460,7 @@ export default [
     name: "ellipse-double",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2567,7 +2567,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2679,7 +2679,7 @@ export default [
     name: "ellipse-double-in",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2786,7 +2786,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -2899,7 +2899,7 @@ export default [
     name: "pie",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3037,7 +3037,7 @@ export default [
     name: "bar-horizontal",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3115,7 +3115,7 @@ export default [
     name: "bar-vertical",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3193,7 +3193,7 @@ export default [
     name: "diamond",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3301,7 +3301,7 @@ export default [
     name: "triangle-right",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3386,7 +3386,7 @@ export default [
     name: "triangle-half-center-right",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3471,7 +3471,7 @@ export default [
     name: "triangle-half-right",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3556,7 +3556,7 @@ export default [
     name: "triangle-left",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3631,7 +3631,7 @@ export default [
     name: "triangle-half-center-left",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3706,7 +3706,7 @@ export default [
     name: "triangle-half-left",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3781,7 +3781,7 @@ export default [
     name: "triangle-up",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3856,7 +3856,7 @@ export default [
     name: "triangle-half-center-up",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -3931,7 +3931,7 @@ export default [
     name: "triangle-half-up",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4006,7 +4006,7 @@ export default [
     name: "triangle-down",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4081,7 +4081,7 @@ export default [
     name: "triangle-half-center-down",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4156,7 +4156,7 @@ export default [
     name: "triangle-half-down",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4231,7 +4231,7 @@ export default [
     name: "triangle-sw",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4306,7 +4306,7 @@ export default [
     name: "triangle-ne",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4381,7 +4381,7 @@ export default [
     name: "triangle-nw",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4456,7 +4456,7 @@ export default [
     name: "triangle-se",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4531,7 +4531,7 @@ export default [
     name: "diamond-double-rel",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4736,7 +4736,7 @@ export default [
     name: "diamond-full-height",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4844,7 +4844,7 @@ export default [
     name: "diamond-full-width",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -4952,7 +4952,7 @@ export default [
     name: "diamond-full-height-double",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -5055,7 +5055,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -5163,7 +5163,7 @@ export default [
     name: "diamond-full-width-double",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -5266,7 +5266,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -5374,7 +5374,7 @@ export default [
     name: "rect-clipped",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -5544,7 +5544,7 @@ export default [
     name: "octagon",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -5704,7 +5704,7 @@ export default [
     name: "octagon-proper",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -5887,7 +5887,7 @@ export default [
     name: "octagon-square",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -6094,7 +6094,7 @@ export default [
     name: "rect-clipped-paper",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -6218,7 +6218,7 @@ export default [
     name: "rect-clipped-paper-proportional",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -6329,7 +6329,7 @@ export default [
     name: "rect-fold-paper",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -6448,7 +6448,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -6513,7 +6513,7 @@ export default [
     name: "rect-fold-paper-proportional",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -6619,7 +6619,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -6684,7 +6684,7 @@ export default [
     name: "rect-handle",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -6951,7 +6951,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -7132,7 +7132,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -7675,7 +7675,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -8072,7 +8072,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -8547,7 +8547,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -8728,7 +8728,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -9271,7 +9271,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -9668,7 +9668,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -9992,7 +9992,7 @@ export default [
     name: "hexagon",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -10162,7 +10162,7 @@ export default [
     name: "pill",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -11489,7 +11489,7 @@ export default [
     name: "diamond-plus",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -11811,7 +11811,7 @@ export default [
     name: "diamond-plus-big",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -12109,7 +12109,7 @@ export default [
     name: "diamond-X",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -12624,7 +12624,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -12892,7 +12892,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -13043,7 +13043,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -13121,7 +13121,7 @@ export default [
     name: "ellipse-double-black",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -13441,7 +13441,7 @@ export default [
     name: "ellipse-double-in-black",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -13761,7 +13761,7 @@ export default [
     name: "ellipse-triple-black",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -14188,7 +14188,7 @@ export default [
     name: "ellipse-mail",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -14295,7 +14295,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -14434,7 +14434,7 @@ export default [
     name: "ellipse-mail-filled",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -15052,7 +15052,7 @@ export default [
     name: "rect-fold-paper-proportional-striped",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -15158,7 +15158,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -15218,7 +15218,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -15343,7 +15343,7 @@ export default [
     name: "rect-fold-paper-proportional-arrow-right",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -15449,7 +15449,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -15509,7 +15509,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -15646,7 +15646,7 @@ export default [
     name: "rect-fold-paper-proportional-arrow-right-black",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -15752,7 +15752,7 @@ export default [
         stroke_color: "black",
       },
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,
@@ -16240,7 +16240,7 @@ export default [
     name: "database",
     paths: [
       {
-        fill_color: "white",
+        fill_color: "inherit",
         segments: [
           {
             relative: false,

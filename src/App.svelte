@@ -2,9 +2,11 @@
     import { onMount } from "svelte";
     import decorations from "./shapes.js";
     import { buildPath, serializePath } from "./path.js";
+    import { exportElixir as ex } from "./elixir_export.js";
 
     let decos = decorations;
     let fetched = false;
+    let serial = null;
 
     const loadFromApi = (evt) => {
         evt.preventDefault();
@@ -12,19 +14,24 @@
             mode: "cors",
             credentials: "include",
         })
-            .then((r) => {
-                return r.json().then((data) => {
-                    if (data.shapes) {
-                        decos = data.shapes;
-                        console.log(data.shapes);
-                        fetched = true;
-                    }
-                });
+            .then(async (r) => {
+                const data = await r.json();
+                if (data.shapes) {
+                    decos = data.shapes;
+                    console.log(data.shapes);
+                    fetched = true;
+                }
             })
             .catch((e) => {
+                console.error(e);
+                alert("could not load symbols from api url");
                 fetched = false;
             });
     };
+
+    function exportElixir(deco) {
+        serial = JSON.stringify(ex(deco), null, "  ");
+    }
 
     const box = {
         x: 50,
@@ -35,6 +42,27 @@
         stroke: "#111111",
     };
 </script>
+
+{#if serial}
+    <dialog
+        open
+        on:close={() => {
+            serial = null;
+        }}
+    >
+        <button
+            on:click={(evt) => {
+                evt.currentTarget.parentNode.close();
+                console.log("x");
+            }}>Discard</button
+        >
+        <textarea
+            readonly
+            style="display: block; width: 70vw; height: 20em; white-space: pre;"
+            >{serial}</textarea
+        >
+    </dialog>
+{/if}
 
 <article>
     <header>
@@ -122,13 +150,14 @@
                     ></rect>
                 </svg>
                 <footer>{deco.name}</footer>
-                <footer>
+                <footer style="display: flex;">
                     <input
                         readonly
                         class="code"
                         type="text"
                         value={deco.paths.map((p) => serializePath(p))}
                     />
+                    <button on:click={exportElixir(deco)}>Ex</button>
                 </footer>
             </article>
         {/each}
@@ -136,10 +165,54 @@
 </article>
 
 <style>
+    dialog {
+        position: fixed;
+        top: 2em;
+        z-index: 1000;
+    }
     article {
         display: grid;
         grid-template-rows: auto auto;
+        grid-template-columns: 100%;
         gap: 1em;
+    }
+    form {
+        display: flex;
+        gap: 1ex;
+        align-items: stretch;
+    }
+
+    input[type="text"] {
+        font: inherit;
+        padding: 1ex;
+        flex-grow: 1;
+        margin: 0;
+        flex-shrink: 1;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    button {
+        font: inherit;
+        padding: 1ex 2ex;
+        cursor: pointer;
+        margin: 0;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        background-color: #08f;
+        color: #fff;
+        background-image: linear-gradient(#fff2, #0002);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    button:hover {
+        background-color: #08f;
+        background-image: linear-gradient(#fff1, #0001);
+    }
+    button:active {
+        background-color: #08f;
+        background-image: linear-gradient(#0002, #fff2);
     }
 
     header {
@@ -162,6 +235,8 @@
 
     footer {
         font-family: monospace;
+        flex-shrink: 1;
+        gap: 1ex;
     }
     .grid {
         display: grid;
