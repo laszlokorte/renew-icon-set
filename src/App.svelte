@@ -41,6 +41,67 @@
         fill: "#ffffff",
         stroke: "#111111",
     };
+    const argValues = {};
+
+    function forceArg(arg, force) {
+        if (force.type == "sign") {
+            arg = {
+                x: Math.min(1, Math.max(0, arg.x * force.value)) * force.value,
+                y: Math.min(1, Math.max(0, arg.y * force.value)) * force.value,
+            };
+        }
+        if (force.type == "angle") {
+            const bx = Math.cos((force.value * Math.PI) / 180);
+            const by = Math.sin((force.value * Math.PI) / 180);
+            const len = Math.max(0, arg.x * bx + arg.y * by);
+            arg = {
+                x: Math.min(
+                    1,
+                    Math.max(-1, Math.cos((force.value * Math.PI) / 180) * len),
+                ),
+                y: Math.min(
+                    1,
+                    Math.max(-1, Math.sin((force.value * Math.PI) / 180) * len),
+                ),
+            };
+        }
+        if (force.type == "angle") {
+            const bx = Math.cos((force.value * Math.PI) / 180);
+            const by = Math.sin((force.value * Math.PI) / 180);
+            const len = Math.max(0, arg.x * bx + arg.y * by);
+            arg = {
+                x: Math.min(
+                    1,
+                    Math.max(-1, Math.cos((force.value * Math.PI) / 180) * len),
+                ),
+                y: Math.min(
+                    1,
+                    Math.max(-1, Math.sin((force.value * Math.PI) / 180) * len),
+                ),
+            };
+        }
+        if (force.type == "radius") {
+            const len = Math.hypot(arg.y, arg.x);
+            arg = {
+                x: (arg.x / len) * force.value,
+                y: (arg.y / len) * force.value,
+            };
+        }
+        if (force.type == "x") {
+            arg = {
+                x: force.value,
+                y: arg.y,
+            };
+        }
+
+        if (force.type == "y") {
+            arg = {
+                y: force.value,
+                x: arg.x,
+            };
+        }
+        return arg;
+    }
 </script>
 
 {#if serial}
@@ -129,7 +190,16 @@
                     <g fill={box.fill} stroke={box.stroke}>
                         {#each deco.paths as path}
                             <path
-                                d={buildPath(box, path)}
+                                d={buildPath(
+                                    box,
+                                    path,
+                                    Object.fromEntries(
+                                        (deco.args ?? []).map((a) => [
+                                            a.name,
+                                            argValues[a.name] ?? a.default,
+                                        ]),
+                                    ),
+                                )}
                                 fill={path.fill_color}
                                 stroke={path.stroke_color}
                                 vector-effect="non-scaling-stroke"
@@ -148,6 +218,90 @@
                         stroke="#08a5"
                         stroke-dasharray="5 5"
                     ></rect>
+
+                    {#if deco.args}
+                        {#each deco.args as arg}
+                            {@const pos = forceArg(
+                                argValues[arg.name] ?? arg.default,
+                                arg.force,
+                            )}
+                            <g
+                                class="arg-handle"
+                                pointer-events="all"
+                                on:pointerdown={(evt) => {
+                                    if (evt.isPrimary) {
+                                        evt.currentTarget.setPointerCapture(
+                                            evt.pointerId,
+                                        );
+                                    }
+                                }}
+                                on:pointermove={(evt) => {
+                                    if (
+                                        evt.currentTarget.hasPointerCapture(
+                                            evt.pointerId,
+                                        )
+                                    ) {
+                                        const svg =
+                                            evt.currentTarget.ownerSVGElement;
+                                        const pt = svg.createSVGPoint(); // demo is an SVGElement
+                                        pt.x = evt.clientX;
+                                        pt.y = evt.clientY;
+                                        const svgGlobal = pt.matrixTransform(
+                                            svg.getScreenCTM().inverse(),
+                                        );
+                                        const adjusted = forceArg(
+                                            {
+                                                x:
+                                                    ((svgGlobal.x -
+                                                        box.x +
+                                                        box.width / 2) /
+                                                        box.width) *
+                                                        2 -
+                                                    2,
+                                                y: +(
+                                                    ((svgGlobal.y -
+                                                        box.y +
+                                                        box.height / 2) /
+                                                        box.height) *
+                                                        2 -
+                                                    2
+                                                ),
+                                            },
+                                            arg.force,
+                                        );
+                                        argValues[arg.name] = adjusted;
+                                        // svgGlobal.x and svgGlobal.y are now in SVG coordinates
+                                    }
+                                }}
+                            >
+                                <circle
+                                    cx={box.x +
+                                        box.width / 2 +
+                                        (pos.x * box.width) / 2}
+                                    cy={box.y +
+                                        box.height / 2 +
+                                        (pos.y * box.height) / 2}
+                                    stroke="none"
+                                    r="12"
+                                    fill="transparent"
+                                    cursor="move"
+                                />
+                                <circle
+                                    cx={box.x +
+                                        box.width / 2 +
+                                        (pos.x * box.width) / 2}
+                                    cy={box.y +
+                                        box.height / 2 +
+                                        (pos.y * box.height) / 2}
+                                    stroke="gold"
+                                    r="5"
+                                    fill="yellow"
+                                    cursor="move"
+                                    class="indicator"
+                                />
+                            </g>
+                        {/each}
+                    {/if}
                 </svg>
                 <footer>{deco.name}</footer>
                 <footer style="display: flex;">
@@ -285,5 +439,15 @@
         display: flex;
         align-items: center;
         gap: 1em;
+    }
+
+    .arg-handle:hover > .indicator {
+        fill: gold;
+        cursor: move;
+    }
+
+    .arg-handle:active > .indicator {
+        fill: gold;
+        stroke: yellow;
     }
 </style>
