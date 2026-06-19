@@ -253,8 +253,7 @@
                                             {
                                                 x:
                                                     ((svgGlobal.x -
-                                                        ((arg.anchor?.x ?? 0) /
-                                                            2) *
+                                                        arg.origin.x *
                                                             box.width -
                                                         box.x +
                                                         box.width / 2) /
@@ -263,8 +262,7 @@
                                                     2,
                                                 y: +(
                                                     ((svgGlobal.y -
-                                                        ((arg.anchor?.y ?? 0) /
-                                                            2) *
+                                                        arg.origin.y *
                                                             box.height -
                                                         box.y +
                                                         box.height / 2) /
@@ -284,11 +282,11 @@
                                     cx={box.x +
                                         box.width / 2 +
                                         (pos.x * box.width) / 2 +
-                                        ((arg.anchor?.x ?? 0) / 2) * box.width}
+                                        arg.origin.x * box.width}
                                     cy={box.y +
                                         box.height / 2 +
                                         (pos.y * box.height) / 2 +
-                                        ((arg.anchor?.y ?? 0) / 2) * box.height}
+                                        arg.origin.y * box.height}
                                     stroke="none"
                                     r="12"
                                     fill="transparent"
@@ -298,11 +296,11 @@
                                     cx={box.x +
                                         box.width / 2 +
                                         (pos.x * box.width) / 2 +
-                                        ((arg.anchor?.x ?? 0) / 2) * box.width}
+                                        arg.origin.x * box.width}
                                     cy={box.y +
                                         box.height / 2 +
                                         (pos.y * box.height) / 2 +
-                                        ((arg.anchor?.y ?? 0) / 2) * box.height}
+                                        arg.origin.y * box.height}
                                     stroke="gold"
                                     r="5"
                                     fill="yellow"
@@ -315,11 +313,11 @@
                                     x={box.x +
                                         box.width / 2 +
                                         (pos.x * box.width) / 2 +
-                                        ((arg.anchor?.x ?? 0) / 2) * box.width}
+                                        arg.origin.x * box.width}
                                     y={box.y +
                                         box.height / 2 +
                                         (pos.y * box.height) / 2 +
-                                        ((arg.anchor?.y ?? 0) / 2) * box.height}
+                                        arg.origin.y * box.height}
                                     >{pos.x},{pos.y}</text
                                 >
                             </g>
