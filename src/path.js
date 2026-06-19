@@ -38,14 +38,14 @@ export function buildCoord(box, dim, relative, coord, argValues) {
 
   const origin = box[dim];
   const base = coord.value * units[coord.unit];
-  const offset =
-    ops[coord.offset.operation](
-      coord.offset.value_static,
-      units[coord.offset.dynamic_unit] * coord.offset.dynamic_value,
-    ) *
-    (argValues && coord.offset.arg
-      ? (argValues[coord.offset.arg]?.[dim] ?? 1)
-      : 1);
+  const offset = ops[coord.offset.operation](
+    coord.offset.value_static,
+    units[coord.offset.dynamic_unit] *
+      coord.offset.dynamic_value *
+      (argValues && coord.offset.arg
+        ? (argValues[coord.offset.arg]?.[dim] ?? 1)
+        : 1),
+  );
 
   return (relative ? base : base + origin) + offset;
 }
@@ -64,9 +64,9 @@ export function buildStep(
   const arc = !!step.arc;
 
   if (arc) {
-    if (step.arc.centered) {
-      const cx = makeCoords("x", false, step.arc.rx, argValues);
-      const cy = makeCoords("y", false, step.arc.ry, argValues);
+    if (step.ctrl) {
+      const cx = makeCoords("x", false, step.ctrl.horizontal, argValues);
+      const cy = makeCoords("y", false, step.ctrl.vertical, argValues);
 
       const x = step.horizontal
         ? makeCoords("x", step.relative, step.horizontal, argValues)
@@ -74,7 +74,8 @@ export function buildStep(
       const y = step.vertical
         ? makeCoords("y", step.relative, step.vertical, argValues)
         : 0;
-      const r = Math.hypot(currentX - cx, currentY - cy);
+      const rx = makeCoords("x", true, step.arc.rx, argValues);
+      const ry = makeCoords("y", true, step.arc.ry, argValues);
       const a1 = Math.atan2(currentY - cy, currentX - cx);
       const a2 = Math.atan2(y - cy, x - cx);
       let delta = a2 - a1;
@@ -82,9 +83,9 @@ export function buildStep(
 
       const autoLarge = delta > Math.PI ? 1 : 0;
       const params =
-        r +
+        rx +
         ", " +
-        r +
+        ry +
         ", " +
         (step.arc.angle ? 1 : 0) +
         ", " +

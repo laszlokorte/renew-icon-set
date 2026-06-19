@@ -253,6 +253,9 @@
                                             {
                                                 x:
                                                     ((svgGlobal.x -
+                                                        ((arg.anchor?.x ?? 0) /
+                                                            2) *
+                                                            box.width -
                                                         box.x +
                                                         box.width / 2) /
                                                         box.width) *
@@ -260,6 +263,9 @@
                                                     2,
                                                 y: +(
                                                     ((svgGlobal.y -
+                                                        ((arg.anchor?.y ?? 0) /
+                                                            2) *
+                                                            box.height -
                                                         box.y +
                                                         box.height / 2) /
                                                         box.height) *
@@ -277,10 +283,12 @@
                                 <circle
                                     cx={box.x +
                                         box.width / 2 +
-                                        (pos.x * box.width) / 2}
+                                        (pos.x * box.width) / 2 +
+                                        ((arg.anchor?.x ?? 0) / 2) * box.width}
                                     cy={box.y +
                                         box.height / 2 +
-                                        (pos.y * box.height) / 2}
+                                        (pos.y * box.height) / 2 +
+                                        ((arg.anchor?.y ?? 0) / 2) * box.height}
                                     stroke="none"
                                     r="12"
                                     fill="transparent"
@@ -289,16 +297,31 @@
                                 <circle
                                     cx={box.x +
                                         box.width / 2 +
-                                        (pos.x * box.width) / 2}
+                                        (pos.x * box.width) / 2 +
+                                        ((arg.anchor?.x ?? 0) / 2) * box.width}
                                     cy={box.y +
                                         box.height / 2 +
-                                        (pos.y * box.height) / 2}
+                                        (pos.y * box.height) / 2 +
+                                        ((arg.anchor?.y ?? 0) / 2) * box.height}
                                     stroke="gold"
                                     r="5"
                                     fill="yellow"
                                     cursor="move"
                                     class="indicator"
                                 />
+                                <text
+                                    visibility="hidden"
+                                    pointer-events="none"
+                                    x={box.x +
+                                        box.width / 2 +
+                                        (pos.x * box.width) / 2 +
+                                        ((arg.anchor?.x ?? 0) / 2) * box.width}
+                                    y={box.y +
+                                        box.height / 2 +
+                                        (pos.y * box.height) / 2 +
+                                        ((arg.anchor?.y ?? 0) / 2) * box.height}
+                                    >{pos.x},{pos.y}</text
+                                >
                             </g>
                         {/each}
                     {/if}

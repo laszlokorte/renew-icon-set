@@ -1775,6 +1775,205 @@ export default [
     ],
   },
   {
+    name: "poly-dynamic",
+
+    args: [
+      {
+        name: "radius",
+        force: {
+          type: "sign",
+          value: 1,
+        },
+        default: { x: 1, y: 1 },
+      },
+    ],
+    paths: [
+      {
+        fill_color: "inherit",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
+                  },
+                  unit: "width",
+                  value: 1,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: 0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+              {
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "width",
+                    dynamic_value: 0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "width",
+                  value: 0.5,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: 0,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0,
+                },
+                relative: false,
+              },
+
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "width",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "width",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "width",
+                    dynamic_value: 0,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+              {
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: 0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "width",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "width",
+                  value: 0.5,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: 0,
+                    operation: "sum",
+                    value_static: 0,
+                  },
+                  unit: "height",
+                  value: 1,
+                },
+                relative: false,
+              },
+
+              {
+                relative: false,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "width",
+                dynamic_value: 0.5,
+                operation: "sum",
+                value_static: 0,
+                arg: "radius",
+              },
+              unit: "width",
+              value: 0.5,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0,
+                operation: "min",
+                value_static: 0,
+              },
+              unit: "height",
+              value: 1,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+    ],
+  },
+  {
     name: "rect-round",
 
     args: [
@@ -1805,47 +2004,268 @@ export default [
                   unit: "width",
                   value: 1,
                 },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: 0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                arc: {
+                  angle: 0,
+                  large: false,
+                  rx: {
+                    offset: {
+                      dynamic_unit: "width",
+                      dynamic_value: -0.5,
+                      operation: "sum",
+                      value_static: 0,
+                      arg: "radius",
+                    },
+                    unit: "width",
+                    value: 0.5,
+                  },
+                  ry: {
+                    offset: {
+                      dynamic_unit: "height",
+                      dynamic_value: -0.5,
+                      operation: "sum",
+                      value_static: 0,
+                      arg: "radius",
+                    },
+                    unit: "height",
+                    value: 0.5,
+                  },
+                  sweep: false,
+                },
                 relative: false,
               },
               {
-                relative: false,
                 vertical: {
                   offset: {
-                    dynamic_unit: "minsize",
+                    dynamic_unit: "height",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "width",
+                    dynamic_value: 0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "width",
+                  value: 0.5,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
                     dynamic_value: 0,
-                    operation: "min",
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0,
+                },
+
+                arc: {
+                  angle: 0,
+                  large: false,
+                  rx: {
+                    offset: {
+                      dynamic_unit: "width",
+                      dynamic_value: -0.5,
+                      operation: "sum",
+                      value_static: 0,
+                      arg: "radius",
+                    },
+                    unit: "width",
+                    value: 0.5,
+                  },
+                  ry: {
+                    offset: {
+                      dynamic_unit: "height",
+                      dynamic_value: -0.5,
+                      operation: "sum",
+                      value_static: 0,
+                      arg: "radius",
+                    },
+                    unit: "height",
+                    value: 0.5,
+                  },
+                  sweep: false,
+                },
+                relative: false,
+              },
+
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "width",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "width",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "width",
+                    dynamic_value: 0,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+
+                arc: {
+                  angle: 0,
+                  large: false,
+                  rx: {
+                    offset: {
+                      dynamic_unit: "width",
+                      dynamic_value: -0.5,
+                      operation: "sum",
+                      value_static: 0,
+                      arg: "radius",
+                    },
+                    unit: "width",
+                    value: 0.5,
+                  },
+                  ry: {
+                    offset: {
+                      dynamic_unit: "height",
+                      dynamic_value: -0.5,
+                      operation: "sum",
+                      value_static: 0,
+                      arg: "radius",
+                    },
+                    unit: "height",
+                    value: 0.5,
+                  },
+                  sweep: false,
+                },
+                relative: false,
+              },
+              {
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: 0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "width",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "radius",
+                  },
+                  unit: "width",
+                  value: 0.5,
+                },
+
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: 0,
+                    operation: "sum",
                     value_static: 0,
                   },
                   unit: "height",
                   value: 1,
                 },
-              },
-              {
-                horizontal: {
-                  offset: {
-                    dynamic_unit: "minsize",
-                    dynamic_value: 0,
-                    operation: "min",
-                    value_static: 0,
+
+                arc: {
+                  angle: 0,
+                  large: false,
+                  rx: {
+                    offset: {
+                      dynamic_unit: "width",
+                      dynamic_value: -0.5,
+                      operation: "sum",
+                      value_static: 0,
+                      arg: "radius",
+                    },
+                    unit: "width",
+                    value: 0.5,
                   },
-                  unit: "width",
-                  value: 0,
+                  ry: {
+                    offset: {
+                      dynamic_unit: "height",
+                      dynamic_value: -0.5,
+                      operation: "sum",
+                      value_static: 0,
+                      arg: "radius",
+                    },
+                    unit: "height",
+                    value: 0.5,
+                  },
+                  sweep: false,
                 },
                 relative: false,
               },
+
               {
                 relative: false,
               },
             ],
             x: {
               offset: {
-                dynamic_unit: "minsize",
-                dynamic_value: 0,
-                operation: "min",
+                dynamic_unit: "width",
+                dynamic_value: 0.5,
+                operation: "sum",
                 value_static: 0,
+                arg: "radius",
               },
               unit: "width",
-              value: 0,
+              value: 0.5,
             },
             y: {
               offset: {
@@ -1855,7 +2275,7 @@ export default [
                 value_static: 0,
               },
               unit: "height",
-              value: 0,
+              value: 1,
             },
           },
         ],
@@ -2289,9 +2709,9 @@ export default [
         name: "stroke",
         force: {
           type: "angle",
-          value: 0,
+          value: 45,
         },
-        default: { x: 1, y: -1 },
+        default: { x: 1, y: 1 },
       },
     ],
     paths: [
@@ -2375,12 +2795,107 @@ export default [
             relative: false,
             steps: [
               {
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "stroke",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+              {
                 horizontal: {
                   offset: {
                     dynamic_unit: "width",
                     dynamic_value: -0.5,
-                    operation: "max",
-                    value_static: -10,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "stroke",
+                  },
+                  unit: "width",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+
+              {
+                vertical: {
+                  offset: {
+                    dynamic_unit: "height",
+                    dynamic_value: 0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "stroke",
+                  },
+                  unit: "height",
+                  value: 0.5,
+                },
+                relative: false,
+              },
+              {
+                relative: false,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "width",
+                dynamic_value: 0.5,
+                operation: "sum",
+                value_static: 0,
+                arg: "stroke",
+              },
+              unit: "width",
+              value: 0.5,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "height",
+                dynamic_value: 0.5,
+                operation: "sum",
+                value_static: 0,
+                arg: "stroke",
+              },
+              unit: "height",
+              value: 0.5,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+    ],
+  },
+  {
+    name: "rect-double-in-dynamic-alt",
+    args: [
+      {
+        name: "stroke-alt",
+        force: {
+          type: "angle",
+          value: 225,
+        },
+        anchor: { x: 1, y: 1 },
+        default: { x: 0, y: 0 },
+      },
+    ],
+    paths: [
+      {
+        fill_color: "inherit",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
                   },
                   unit: "width",
                   value: 1,
@@ -2391,10 +2906,10 @@ export default [
                 relative: false,
                 vertical: {
                   offset: {
-                    dynamic_unit: "height",
-                    dynamic_value: -0.5,
-                    operation: "max",
-                    value_static: -10,
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
+                    operation: "min",
+                    value_static: 0,
                   },
                   unit: "height",
                   value: 1,
@@ -2403,10 +2918,10 @@ export default [
               {
                 horizontal: {
                   offset: {
-                    dynamic_unit: "width",
-                    dynamic_value: 0.5,
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0,
                     operation: "min",
-                    value_static: 10,
+                    value_static: 0,
                   },
                   unit: "width",
                   value: 0,
@@ -2419,23 +2934,101 @@ export default [
             ],
             x: {
               offset: {
-                dynamic_unit: "width",
-                dynamic_value: 0.5,
+                dynamic_unit: "minsize",
+                dynamic_value: 0,
                 operation: "min",
-                value_static: 10,
+                value_static: 0,
               },
               unit: "width",
               value: 0,
             },
             y: {
               offset: {
-                dynamic_unit: "height",
-                dynamic_value: 0.5,
+                dynamic_unit: "minsize",
+                dynamic_value: 0,
                 operation: "min",
-                value_static: 10,
+                value_static: 0,
               },
               unit: "height",
               value: 0,
+            },
+          },
+        ],
+        stroke_color: "black",
+      },
+      {
+        fill_color: "inherit",
+        segments: [
+          {
+            relative: false,
+            steps: [
+              {
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "stroke-alt",
+                  },
+                  unit: "height",
+                  value: 0,
+                },
+                relative: false,
+              },
+              {
+                horizontal: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: -0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "stroke-alt",
+                  },
+                  unit: "width",
+                  value: 0,
+                },
+                relative: false,
+              },
+              {
+                vertical: {
+                  offset: {
+                    dynamic_unit: "minsize",
+                    dynamic_value: 0.5,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "stroke-alt",
+                  },
+                  unit: "height",
+                  value: 1,
+                },
+                relative: false,
+              },
+              {
+                relative: false,
+              },
+            ],
+            x: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "sum",
+                value_static: 0,
+                arg: "stroke-alt",
+              },
+              unit: "width",
+              value: 1,
+            },
+            y: {
+              offset: {
+                dynamic_unit: "minsize",
+                dynamic_value: 0.5,
+                operation: "sum",
+                value_static: 0,
+                arg: "stroke-alt",
+              },
+              unit: "height",
+              value: 1,
             },
           },
         ],
@@ -3315,7 +3908,7 @@ export default [
                 relative: false,
                 horizontal: {
                   offset: {
-                    dynamic_unit: "minsize",
+                    dynamic_unit: "width",
                     dynamic_value: 0.5,
                     operation: "sum",
                     value_static: 0,
@@ -3326,7 +3919,7 @@ export default [
                 },
                 vertical: {
                   offset: {
-                    dynamic_unit: "minsize",
+                    dynamic_unit: "height",
                     dynamic_value: 0.5,
                     operation: "sum",
                     value_static: 0,
@@ -3335,13 +3928,34 @@ export default [
                   unit: "height",
                   value: 0.5,
                 },
+                ctrl: {
+                  horizontal: {
+                    offset: {
+                      dynamic_unit: "width",
+                      dynamic_value: 0,
+                      operation: "sum",
+                      value_static: 0,
+                    },
+                    unit: "width",
+                    value: 0.5,
+                  },
+                  vertical: {
+                    offset: {
+                      dynamic_unit: "height",
+                      dynamic_value: 0,
+                      operation: "sum",
+                      value_static: 0,
+                    },
+                    unit: "height",
+                    value: 0.5,
+                  },
+                },
                 arc: {
-                  centered: true,
                   angle: 0,
                   large: true,
                   rx: {
                     offset: {
-                      dynamic_unit: "minsize",
+                      dynamic_unit: "width",
                       dynamic_value: 0,
                       operation: "min",
                       value_static: 0,
@@ -3351,7 +3965,7 @@ export default [
                   },
                   ry: {
                     offset: {
-                      dynamic_unit: "minsize",
+                      dynamic_unit: "height",
                       dynamic_value: 0,
                       operation: "min",
                       value_static: 0,
@@ -3377,12 +3991,12 @@ export default [
                 },
                 horizontal: {
                   offset: {
-                    dynamic_unit: "minsize",
+                    dynamic_unit: "width",
                     dynamic_value: 0,
                     operation: "min",
                     value_static: 0,
                   },
-                  unit: "height",
+                  unit: "width",
                   value: 0.5,
                 },
               },
@@ -3392,7 +4006,7 @@ export default [
             ],
             x: {
               offset: {
-                dynamic_unit: "minsize",
+                dynamic_unit: "width",
                 dynamic_value: 0.5,
                 operation: "sum",
                 value_static: 0,
@@ -3403,7 +4017,7 @@ export default [
             },
             y: {
               offset: {
-                dynamic_unit: "minsize",
+                dynamic_unit: "height",
                 dynamic_value: 0.5,
                 operation: "sum",
                 value_static: 0,
@@ -3612,9 +4226,10 @@ export default [
                 vertical: {
                   offset: {
                     dynamic_unit: "height",
-                    dynamic_value: 1,
-                    operation: "min",
-                    value_static: 20,
+                    dynamic_value: -1,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "thickness-y",
                   },
                   unit: "height",
                   value: 0,
@@ -3650,9 +4265,10 @@ export default [
             y: {
               offset: {
                 dynamic_unit: "height",
-                dynamic_value: -0.5,
-                operation: "max",
-                value_static: -10,
+                dynamic_value: 0.5,
+                operation: "sum",
+                value_static: 0,
+                arg: "thickness-y",
               },
               unit: "height",
               value: 0.5,
@@ -3686,9 +4302,10 @@ export default [
                 horizontal: {
                   offset: {
                     dynamic_unit: "width",
-                    dynamic_value: 1,
-                    operation: "min",
-                    value_static: 20,
+                    dynamic_value: -1,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "thickness-x",
                   },
                   unit: "width",
                   value: 0,
@@ -3712,9 +4329,10 @@ export default [
                 horizontal: {
                   offset: {
                     dynamic_unit: "width",
-                    dynamic_value: -1,
-                    operation: "max",
-                    value_static: -20,
+                    dynamic_value: 1,
+                    operation: "sum",
+                    value_static: 0,
+                    arg: "thickness-x",
                   },
                   unit: "width",
                   value: 0,
@@ -3728,9 +4346,10 @@ export default [
             x: {
               offset: {
                 dynamic_unit: "width",
-                dynamic_value: -0.5,
-                operation: "max",
-                value_static: -10,
+                dynamic_value: 0.5,
+                operation: "sum",
+                value_static: 0,
+                arg: "thickness-x",
               },
               unit: "width",
               value: 0.5,
@@ -10854,7 +11473,7 @@ export default [
               {
                 arc: {
                   angle: 0,
-                  large: true,
+                  large: false,
                   rx: {
                     offset: {
                       dynamic_unit: "minsize",
@@ -10875,7 +11494,7 @@ export default [
                     unit: "minsize",
                     value: 0.5,
                   },
-                  sweep: false,
+                  sweep: true,
                 },
                 horizontal: {
                   offset: {
